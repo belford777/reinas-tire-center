@@ -7,7 +7,7 @@ export const metadata = {
   description: 'Frequently asked questions about ordering, shipping, returns, and partnerships.',
 };
 
-const categories = [...new Set(faqData.map((f) => f.category))];
+const categories = Array.from(new Set(faqData.map((f) => f.category)));
 
 export default function FAQPage() {
   return (
